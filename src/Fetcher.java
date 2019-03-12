@@ -75,7 +75,7 @@ public class Fetcher {
                 //System.out.println("artikli sisu:");
 
 
-                Document artikkel = Jsoup.connect(item.attr("href")).get();
+                Document artikkel = Jsoup.connect(link).get();
                 try {
                     aeg = artikkel.select(".article__publish-date").first().text();
                 } catch (Exception e) {
@@ -96,6 +96,44 @@ public class Fetcher {
             }
         }
         //TimeUnit.SECONDS.sleep(1);
+        return tagastus;
+    }
+
+    public static ArrayList<Fetcher> getOhtuleht() throws IOException, InterruptedException {
+        String url = "https://www.ohtuleht.ee/";
+        org.jsoup.nodes.Document document = Jsoup.connect(url).get();
+        ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
+        String pealkiri;
+        String link;
+        String aeg;
+        String artikliSisu;
+
+        Elements text = document.select(".article-unit--title");
+        for (Element item : text) {
+            try {
+                pealkiri = item.select("a").text();
+                link = item.select("a").attr("href");
+
+                Document artikkel = Jsoup.connect(link).get();
+
+                try {
+                    aeg = artikkel.select(".details--inner").text();
+                } catch (Exception e) {
+                    aeg = "-";
+                }
+                artikliSisu = "";
+                for (Element tekst : artikkel.select(".article-main--content").select("p")) {
+                    artikliSisu = artikliSisu + tekst.text() + "\n";
+                }
+
+
+
+            } catch (Exception e) {
+                continue;
+            }
+        }
+
+
         return tagastus;
     }
 }
