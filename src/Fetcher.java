@@ -14,7 +14,6 @@ public class Fetcher {
     private String aeg;
     private String artikkel;
     private String portaal;
-    private boolean trash;
 
     public Fetcher(String pealkiri, String link, String aeg, String artikkel, String portaal) {
         this.pealkiri = pealkiri;
