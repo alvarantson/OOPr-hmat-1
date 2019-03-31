@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class TestFetcher {
     public static void main(String[] args) throws Exception {
-        System.out.println(Fetcher.ge());
+        System.out.println(Fetcher.getKroonika());
         System.out.println(Fetcher.getKroonika().size());
     }
 }
