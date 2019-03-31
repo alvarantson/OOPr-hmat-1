@@ -99,9 +99,12 @@ public class Fetcher {
         return tagastus;
     }
 
+    //TODO: OHTULEHT SEE ON AIDS
+    //TODO: ARTIKLI TEKSTI OSA ON HUINJA
     public static ArrayList<Fetcher> getOhtuleht() throws IOException, InterruptedException {
         String url = "https://www.ohtuleht.ee/";
         org.jsoup.nodes.Document document = Jsoup.connect(url).get();
+
         ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
         String pealkiri;
         String link;
@@ -113,6 +116,16 @@ public class Fetcher {
             try {
                 pealkiri = item.select("a").text();
                 link = item.select("a").attr("href");
+                if (link.contains("http")) {
+                    continue;
+                    // Tegemist ei ole Ohtulehe artikliga!
+                } else {
+                    link = "https://www.ohtuleht.ee" + link;
+                }
+                // prindid alles siin kuna siis prindib ainult ohtulehe artiklid
+                System.out.println();
+                System.out.println(pealkiri);
+                System.out.println(link);
 
                 Document artikkel = Jsoup.connect(link).get();
 
@@ -121,16 +134,202 @@ public class Fetcher {
                 } catch (Exception e) {
                     aeg = "-";
                 }
+                System.out.println(aeg);
                 artikliSisu = "";
-                for (Element tekst : artikkel.select(".article-main--content").select("p")) {
+                // boldis pildialune loik
+                artikliSisu = artikliSisu + artikkel.select(".article-main--gallery-title").select(".article-main--content").first().text() + "\n";
+                System.out.println(artikliSisu);
+                // reaalne sisu
+                for (Element tekst : artikkel.select(".page-layout--inner").select("p")) {
                     artikliSisu = artikliSisu + tekst.text() + "\n";
                 }
+                System.out.println(artikliSisu);
+                System.out.println();
 
-
-
+                tagastus.add(new Fetcher(pealkiri, link, aeg, artikliSisu, "Ohtuleht"));
             } catch (Exception e) {
                 continue;
             }
+        }
+
+
+        return tagastus;
+    }
+
+    public static ArrayList<Fetcher> getTelegram() throws IOException, InterruptedException {
+        String url = "https://www.telegram.ee/";
+        org.jsoup.nodes.Document document = Jsoup.connect(url).get();
+
+        ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
+        String pealkiri;
+        String link;
+        String aeg;
+        String artikliSisu;
+
+        Elements text = document.select(".grid-item");
+        for (Element item : text) {
+            pealkiri = item.text();
+            link = item.select("a").attr("href");
+
+            Document artikkel = Jsoup.connect(link).get();
+
+            aeg = artikkel.select(".time").text();
+
+            artikliSisu = "";
+            int counter = 0;
+            for (Element tekst: artikkel.select("p")){
+                counter++;
+                if (counter < 4)
+                    continue;
+                artikliSisu += tekst.text();
+            }
+
+            tagastus.add(new Fetcher(pealkiri, link, aeg, artikliSisu, "Telegram"));
+
+        }
+        return tagastus;
+    }
+
+    public static ArrayList<Fetcher> getElu24() throws IOException, InterruptedException {
+        String url = "https://elu24.postimees.ee/";
+        org.jsoup.nodes.Document document = Jsoup.connect(url).get();
+        ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
+
+
+        String pealkiri;
+        String link;
+        String aeg;
+        String artikliSisu;
+
+        Elements text = document.select(".list-article__url");
+        for (org.jsoup.nodes.Element item : text) {
+            try {
+                pealkiri = item.select(".list-article__headline").text();
+                //System.out.println(pealkiri);
+                link = item.attr("href");
+                //System.out.println(link);
+                //System.out.println("artikli sisu:");
+
+
+                Document artikkel = Jsoup.connect(link).get();
+                try {
+                    aeg = artikkel.select(".article__publish-date").first().text();
+                } catch (Exception e) {
+                    aeg = "-";
+                }
+                //System.out.println(aeg);
+
+                artikliSisu = "";
+                for (Element tekst : artikkel.select(".article-body__item").select("p")) {
+                    artikliSisu = artikliSisu + tekst.text() + "\n";
+                }
+                //System.out.println(artikliSisu);
+                //System.out.println();
+
+                tagastus.add(new Fetcher(pealkiri, link, aeg, artikliSisu, "Elu 24"));
+            } catch (Exception e) {
+                continue;
+            }
+        }
+        //TimeUnit.SECONDS.sleep(1);
+        return tagastus;
+    }
+
+    public static ArrayList<Fetcher> getDelfi() throws IOException, InterruptedException {
+        String url = "http://www.delfi.ee/";
+        org.jsoup.nodes.Document document = Jsoup.connect(url).get();
+        ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
+
+
+        String pealkiri;
+        String link;
+        String aeg;
+        String artikliSisu;
+
+        Elements text = document.select(".headline__title");
+        for (org.jsoup.nodes.Element item : text) {
+            pealkiri = item.text();
+            link = item.select("a").attr("href");
+            Document artikkel = Jsoup.connect(link).get();
+
+            aeg = artikkel.select(".article__date").text();
+            int counter = 0;
+            artikliSisu = "";
+            for (Element tekst: artikkel.select(".article__body").select("p")){
+                counter++;
+                artikliSisu += tekst.text();
+            }
+
+
+            tagastus.add(new Fetcher(pealkiri, link, aeg, artikliSisu, "Delfi"));
+        }
+
+
+        return tagastus;
+    }
+
+
+    public static ArrayList<Fetcher> getAnneJaStiil() throws IOException, InterruptedException {
+        String url = "https://annestiil.delfi.ee/";
+        org.jsoup.nodes.Document document = Jsoup.connect(url).get();
+        ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
+
+
+        String pealkiri;
+        String link;
+        String aeg;
+        String artikliSisu;
+
+        Elements text = document.select(".headline__title");
+        for (org.jsoup.nodes.Element item : text) {
+            pealkiri = item.text();
+            link = item.select("a").attr("href");
+            Document artikkel = Jsoup.connect(link).get();
+
+            aeg = artikkel.select(".article__date").text();
+            int counter = 0;
+            artikliSisu = "";
+            for (Element tekst: artikkel.select(".article__body").select("p")){
+                counter++;
+                artikliSisu += tekst.text();
+            }
+
+
+            tagastus.add(new Fetcher(pealkiri, link, aeg, artikliSisu, "Anne ja Stiil"));
+        }
+
+
+        return tagastus;
+    }
+
+
+    public static ArrayList<Fetcher> getKroonika() throws IOException, InterruptedException {
+        String url = "https://kroonika.delfi.ee/";
+        org.jsoup.nodes.Document document = Jsoup.connect(url).get();
+        ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
+
+
+        String pealkiri;
+        String link;
+        String aeg;
+        String artikliSisu;
+
+        Elements text = document.select(".headline__title");
+        for (org.jsoup.nodes.Element item : text) {
+            pealkiri = item.text();
+            link = item.select("a").attr("href");
+            Document artikkel = Jsoup.connect(link).get();
+
+            aeg = artikkel.select(".article__date").text();
+            int counter = 0;
+            artikliSisu = "";
+            for (Element tekst: artikkel.select(".article__body").select("p")){
+                counter++;
+                artikliSisu += tekst.text();
+            }
+
+
+            tagastus.add(new Fetcher(pealkiri, link, aeg, artikliSisu, "Kroonika"));
         }
 
 

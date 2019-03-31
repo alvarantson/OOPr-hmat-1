@@ -7,8 +7,7 @@ import java.util.ArrayList;
 
 public class TestFetcher {
     public static void main(String[] args) throws Exception {
-        ArrayList<Fetcher> asd = Fetcher.getPostimees();
-        System.out.println(asd.size());
-        System.out.println(asd.get(3).getPealkiri() + " - " + asd.get(3).getAeg());
+        System.out.println(Fetcher.ge());
+        System.out.println(Fetcher.getKroonika().size());
     }
 }
