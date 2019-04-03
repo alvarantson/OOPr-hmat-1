@@ -9,5 +9,6 @@ public class TestFetcher {
     public static void main(String[] args) throws Exception {
         System.out.println(Fetcher.getKroonika());
         System.out.println(Fetcher.getKroonika().size());
+        //System.out.println(Eki.findBaseWords("ekre"));
     }
 }
