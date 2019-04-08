@@ -124,9 +124,6 @@ public class Fetcher {
                     link = "https://www.ohtuleht.ee" + link;
                 }
                 // prindid alles siin kuna siis prindib ainult ohtulehe artiklid
-                System.out.println();
-                System.out.println(pealkiri);
-                System.out.println(link);
 
                 Document artikkel = Jsoup.connect(link).get();
 
@@ -135,17 +132,13 @@ public class Fetcher {
                 } catch (Exception e) {
                     aeg = "-";
                 }
-                System.out.println(aeg);
                 artikliSisu = "";
                 // boldis pildialune loik
                 artikliSisu = artikliSisu + artikkel.select(".article-main--gallery-title").select(".article-main--content").first().text() + "\n";
-                System.out.println(artikliSisu);
                 // reaalne sisu
                 for (Element tekst : artikkel.select(".page-layout--inner").select("p")) {
                     artikliSisu = artikliSisu + tekst.text() + "\n";
                 }
-                System.out.println(artikliSisu);
-                System.out.println();
 
                 tagastus.add(new Fetcher(pealkiri, link, aeg, artikliSisu, "Ohtuleht"));
             } catch (Exception e) {
@@ -178,7 +171,7 @@ public class Fetcher {
 
             artikliSisu = "";
             int counter = 0;
-            for (Element tekst: artikkel.select("p")){
+            for (Element tekst : artikkel.select("p")) {
                 counter++;
                 if (counter < 4)
                     continue;
@@ -256,7 +249,7 @@ public class Fetcher {
             aeg = artikkel.select(".article__date").text();
             int counter = 0;
             artikliSisu = "";
-            for (Element tekst: artikkel.select(".article__body").select("p")){
+            for (Element tekst : artikkel.select(".article__body").select("p")) {
                 counter++;
                 artikliSisu += tekst.text();
             }
@@ -290,7 +283,7 @@ public class Fetcher {
             aeg = artikkel.select(".article__date").text();
             int counter = 0;
             artikliSisu = "";
-            for (Element tekst: artikkel.select(".article__body").select("p")){
+            for (Element tekst : artikkel.select(".article__body").select("p")) {
                 counter++;
                 artikliSisu += tekst.text();
             }
@@ -324,7 +317,7 @@ public class Fetcher {
             aeg = artikkel.select(".article__date").text();
             int counter = 0;
             artikliSisu = "";
-            for (Element tekst: artikkel.select(".article__body").select("p")){
+            for (Element tekst : artikkel.select(".article__body").select("p")) {
                 counter++;
                 artikliSisu += tekst.text();
             }
