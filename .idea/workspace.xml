@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fbff9dc-24ff-45a2-9af6-e3b9f7f8e25c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ajaleht.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnneJaStiil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Artikkel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Delfi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Delfilised.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Elu24.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KorrastajaLoendur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Kroonika.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Postimees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Postimehelised.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Telegram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Telegramilised.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestKorrastus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Õhtulehelised.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Õhtuleht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestFetcher.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Fetcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="194" column="13" lean-forward="true" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestKorrastus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Singleton" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tege</find>
+      <find>tegema</find>
+      <find>teha</find>
+      <find>col-md-</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/EkiSearch.java" />
+        <option value="$PROJECT_DIR$/src/Sorter.java" />
+        <option value="$PROJECT_DIR$/src/Eki.java" />
+        <option value="$PROJECT_DIR$/src/Korrastaja.java" />
+        <option value="$PROJECT_DIR$/src/Artikkel.java" />
+        <option value="$PROJECT_DIR$/src/Õhtuleht.java" />
+        <option value="$PROJECT_DIR$/src/Elu24.java" />
+        <option value="$PROJECT_DIR$/src/Postimees.java" />
+        <option value="$PROJECT_DIR$/src/TestFetcher.java" />
+        <option value="$PROJECT_DIR$/src/Ajaleht.java" />
+        <option value="$PROJECT_DIR$/src/Õhtulehelised.java" />
+        <option value="$PROJECT_DIR$/src/KorrastajaLoendur.java" />
+        <option value="$PROJECT_DIR$/src/Postimehelised.java" />
+        <option value="$PROJECT_DIR$/src/Telegram.java" />
+        <option value="$PROJECT_DIR$/src/Delfilised.java" />
+        <option value="$PROJECT_DIR$/src/Telegramilised.java" />
+        <option value="$PROJECT_DIR$/src/Delfi.java" />
+        <option value="$PROJECT_DIR$/src/Kroonika.java" />
+        <option value="$PROJECT_DIR$/src/AnneJaStiil.java" />
+        <option value="$PROJECT_DIR$/src/TestKorrastus.java" />
+        <option value="$PROJECT_DIR$/src/Fetcher.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1402" />
+    <option name="height" value="827" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PROJEKT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOPr-hmat-1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PROJEKT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOPr-hmat-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552308073063" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TestKorrastus">
+    <configuration name="Fetcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fetcher" />
+      <module name="OOPrühmatöö1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFetcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestFetcher" />
+      <module name="OOPrühmatöö1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestKorrastus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestKorrastus" />
+      <module name="OOPrühmatöö1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestKorrastus" />
+        <item itemvalue="Application.TestFetcher" />
+        <item itemvalue="Application.Fetcher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fbff9dc-24ff-45a2-9af6-e3b9f7f8e25c" name="Default Changelist" comment="" />
+      <created>1552300125348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552300125348</updated>
+      <workItem from="1554291597664" duration="267000" />
+      <workItem from="1554291882404" duration="4359000" />
+      <workItem from="1554320885369" duration="16204000" />
+      <workItem from="1556806486448" duration="1517000" />
+      <workItem from="1557400944007" duration="26000" />
+      <workItem from="1557905858111" duration="166000" />
+      <workItem from="1557906099007" duration="199000" />
+      <workItem from="1557906497903" duration="10123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="32861000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15245202" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6924307" visible="true" weight="0.40195015" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.3075693" side_tool="true" visible="true" weight="0.40195015" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32827735" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/out/production/OOPrühmatöö1/Fetcher.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/org/jsoup/helper/HttpConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/org/jsoup/Jsoup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#973#974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/org/jsoup/helper/Validate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/org/jsoup/helper/StringUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="e#3114#3115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/org/jsoup/parser/TokenQueue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/org/jsoup/select/QueryParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/org/jsoup/select/Selector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/org/jsoup/nodes/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
+          <folding>
+            <element signature="e#6872#6873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Eki.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Õhtuleht.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <folding>
+            <element signature="e#69#70#0" expanded="true" />
+            <element signature="e#119#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Artikkel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elu24.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KorrastajaLoendur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ajaleht.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Telegram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#74#75#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnneJaStiil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#57#58#0" expanded="true" />
+            <element signature="e#111#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Postimees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <element signature="e#131#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delfi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
+          <folding>
+            <element signature="e#83#84#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kroonika.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <element signature="e#60#61#0" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Telegramilised.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delfilised.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#90#91#0" expanded="true" />
+            <element signature="e#122#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Õhtulehelised.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="44" column="91" selection-start-line="44" selection-start-column="91" selection-end-line="44" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Postimehelised.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestKorrastus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="194" column="13" lean-forward="true" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
