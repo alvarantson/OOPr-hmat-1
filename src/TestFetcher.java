@@ -2,17 +2,19 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
+/*
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class TestFetcher {
+
     public static void main(String[] args) throws Exception {
         //System.out.println(Fetcher.getKroonika());
         //System.out.println(Fetcher.getKroonika().size());
         Map<String, Integer> globalList = new HashMap<>();
-        System.out.println("Aluastasin kraapimist...");
+        System.out.println("Alustasin kraapimist...");
 
         for (Fetcher article : Fetcher.getPostimees()) {
             String pealkiri = article.getPealkiri();
@@ -118,11 +120,11 @@ public class TestFetcher {
         }
         System.out.println("Kroonika done!");
 
-        System.out.println("Tulemusi kokku: "+  Integer.toString(globalList.size()));
+        System.out.println("Tulemusi kokku: "+  globalList.size());
 
 
         for (String sõna : globalList.keySet()) {
             System.out.println(globalList.get(sõna) + "\t" + sõna);
         }
     }
-}
+}*/
