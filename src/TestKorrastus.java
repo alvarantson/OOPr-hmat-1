@@ -1,6 +1,8 @@
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+
+import static java.util.Map.Entry.comparingByValue;
+import static java.util.stream.Collectors.toMap;
 
 public class TestKorrastus {
 
@@ -10,9 +12,19 @@ public class TestKorrastus {
                 new Delfi(), new AnneJaStiil(), new Kroonika());
         korda.loeSisse(ajalehed);
         System.out.println("Tulemusi kokku: "+  korda.getGlobalList().size());
+        Map<String, Integer> sorted = korda.getGlobalList()
+                .entrySet()
+                .stream()
+                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
+                .collect(
+                        toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
+                                LinkedHashMap::new));
+
+        System.out.println(sorted);
+        /*
         for (String sõna : korda.getGlobalList().keySet()) {
             System.out.println(korda.getGlobalList().get(sõna) + "\t" + sõna);
         }
+        */
     }
-
 }
