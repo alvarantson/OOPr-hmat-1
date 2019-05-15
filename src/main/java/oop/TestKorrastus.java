@@ -67,14 +67,15 @@ public class TestKorrastus extends Application {
         pealava.setWidth(800);
         pealava.setTitle("Test");
         pealava.show();
-        int uusX, uusY, pikkus, font, max = 0, counter = 0;
+        int uusX, uusY, pikkus, font, maxFont = 0, max = 0, counter = 0;
         for (String sõna : sorted.keySet()) {
             Text tekst = new Text(sõna);
             if (counter == 0) {
                 max = sorted.get(sõna);
+                maxFont = Math.min(120, (int) (500 / (sõna.length() * 0.75) * (sorted.get(sõna) / max)));
                 counter = 1;
             }
-            font = Math.min(120, (int) (500 / (sõna.length() * 0.75) * (sorted.get(sõna) / max)));
+            font = maxFont * (sorted.get(sõna) / max);
             pikkus = (int) (sõna.length() * font * 0.75);
             uusX = (int) (Math.random() * (795 - pikkus) + 5);
             uusY = (int) (Math.random() * (780 - font * 2) + 20);
