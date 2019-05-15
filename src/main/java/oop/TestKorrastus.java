@@ -62,29 +62,28 @@ public class TestKorrastus extends Application {
         Scene stseen = new Scene(juur);
         stseen.setFill(Color.WHITE);
         pealava.setScene(stseen);
-        pealava.setResizable(false);
         pealava.setHeight(800);
         pealava.setWidth(800);
         pealava.setTitle("Test");
         pealava.show();
-        int uusX, uusY, pikkus, font, maxFont = 0, max = 0, counter = 0;
+        int uusX, uusY, pikkus, font, maxFont = 0, maxValue = 0, counter = 0;
         for (String sõna : sorted.keySet()) {
             Text tekst = new Text(sõna);
             if (counter == 0) {
-                max = sorted.get(sõna);
-                maxFont = Math.min(120, (int) (500 / (sõna.length() * 0.75) * (sorted.get(sõna) / max)));
+                maxValue = sorted.get(sõna);
+                maxFont = Math.min(120, (int) (500 / (sõna.length() * 0.9) * (sorted.get(sõna) / maxValue)));
                 counter = 1;
             }
-            font = (int) (maxFont * ((double) sorted.get(sõna) / max));
-            pikkus = (int) (sõna.length() * font * 0.75);
-            uusX = (int) (Math.random() * (795 - pikkus) + 5);
-            uusY = (int) (Math.random() * (780 - font * 2) + 20);
+            font = (int) (maxFont * ((double) sorted.get(sõna) / maxValue));
+            pikkus = Math.min(795, (int) (sõna.length() * font * 0.9));
+            if (pikkus == 795) uusX = 5;
+            else uusX = (int) (Math.random() * (795 - pikkus) + (font/4));
+            uusY = (int) (Math.random() * (780 - font * 2) + font);
             tekst.setFont(new Font(font));
             tekst.setX(uusX);
             tekst.setY(uusY);
             tekst.toBack();
             juur.getChildren().add(tekst);
-            System.out.println(sõna);
         }
     }
 
