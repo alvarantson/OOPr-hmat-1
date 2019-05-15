@@ -48,10 +48,17 @@ public class TestKorrastus extends Application {
     }
 
     @Override
-    public void start(Stage pealava) {
-        List<String> testList = Arrays.asList("sõna1", "sõna2", "sõna3", "ai", "looool", "qwerty", "õppeinfosüsteem",
-                "veel", "muud", "paska", "räigelt", "jamamist", "katsetamiseks");
+    public void start(Stage pealava) throws Exception {
+        String[] testList = {"sõna1", "sõna2", "sõna3", "ai", "looool", "qwerty", "õppeinfosüsteem",
+                "veel", "muud", "paska", "räigelt", "jamamist", "katsetamiseks"};
+        int[] testlist2 = {2, 11, 10, 8, 6, 5, 10, 7, 1, 1, 3, 6, 4};
+        Map<String, Integer> testmap = new HashMap<>();
+        for (int i = 0; i < testList.length; i++) {
+            testmap.put(testList[i], testlist2[i]);
+        }
+        Map<String, Integer> sorted = testmap.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).collect(toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2, LinkedHashMap::new));
         Group juur = new Group();
+        System.out.println(sorted);
         Scene stseen = new Scene(juur);
         stseen.setFill(Color.WHITE);
         pealava.setScene(stseen);
@@ -60,33 +67,22 @@ public class TestKorrastus extends Application {
         pealava.setWidth(800);
         pealava.setTitle("Test");
         pealava.show();
-        int eelmisePikkus = 0;
-        int eelmiseKõrgus = 0;
-        int eelmiseX = 5;
-        int eelmiseY = 20;
-        int font = 20;
-        int praegusePikkus = 0;
-        int praeguseKõrgus = 0;
-        int praeguseX = 5;
-        int praeguseY = 20;
-        for (int i = 0; i < testList.size(); i++) {
-            Text tekst = new Text(testList.get(i));
-            //font -= i;
-            tekst.setFont(new Font(font));
-            praegusePikkus = testList.get(i).length()*15;
-            if (eelmiseX + eelmisePikkus + praegusePikkus >= 800) {
-                eelmiseX = 5;
-                eelmisePikkus = 0;
-                praeguseY = eelmiseY + eelmiseKõrgus;
+        int uusX, uusY, pikkus, font, max = 0, counter = 0;
+        for (String sõna : sorted.keySet()) {
+            Text tekst = new Text(sõna);
+            if (counter == 0) {
+                max = sorted.get(sõna);
+                counter = 1;
             }
-            praeguseX = eelmiseX + eelmisePikkus;
-            tekst.setX(praeguseX);
-            tekst.setY(praeguseY);
+            font = Math.min(120, (int) (500 / (sõna.length() * 0.75) * (sorted.get(sõna) / max)));
+            pikkus = (int) (sõna.length() * font * 0.75);
+            uusX = (int) (Math.random() * (795 - pikkus) + 5);
+            uusY = (int) (Math.random() * (780 - font * 2) + 20);
+            tekst.setFont(new Font(font));
+            tekst.setX(uusX);
+            tekst.setY(uusY);
+            tekst.toBack();
             juur.getChildren().add(tekst);
-            eelmisePikkus = praegusePikkus;
-            eelmiseKõrgus = font;
-            eelmiseX = praeguseX;
-            eelmiseY = praeguseY;
         }
     }
 
