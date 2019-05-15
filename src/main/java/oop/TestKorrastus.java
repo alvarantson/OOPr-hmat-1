@@ -49,7 +49,8 @@ public class TestKorrastus extends Application {
 
     @Override
     public void start(Stage pealava) {
-        List<String> testList = Arrays.asList("sõna1", "sõna2", "sõna3", "ai", "looool", "qwerty", "õppeinfosüsteem");
+        List<String> testList = Arrays.asList("sõna1", "sõna2", "sõna3", "ai", "looool", "qwerty", "õppeinfosüsteem",
+                "veel", "muud", "paska", "räigelt", "jamamist", "katsetamiseks");
         Group juur = new Group();
         Scene stseen = new Scene(juur);
         stseen.setFill(Color.WHITE);
@@ -60,15 +61,32 @@ public class TestKorrastus extends Application {
         pealava.setTitle("Test");
         pealava.show();
         int eelmisePikkus = 0;
-        int eelmiseX = 0;
+        int eelmiseKõrgus = 0;
+        int eelmiseX = 5;
+        int eelmiseY = 20;
+        int font = 20;
+        int praegusePikkus = 0;
+        int praeguseKõrgus = 0;
+        int praeguseX = 5;
+        int praeguseY = 20;
         for (int i = 0; i < testList.size(); i++) {
             Text tekst = new Text(testList.get(i));
-            tekst.setFont(new Font(20));
-            tekst.setX(eelmiseX + eelmisePikkus);
-            eelmiseX += eelmisePikkus;
-            tekst.setY(20);
+            //font -= i;
+            tekst.setFont(new Font(font));
+            praegusePikkus = testList.get(i).length()*15;
+            if (eelmiseX + eelmisePikkus + praegusePikkus >= 800) {
+                eelmiseX = 5;
+                eelmisePikkus = 0;
+                praeguseY = eelmiseY + eelmiseKõrgus;
+            }
+            praeguseX = eelmiseX + eelmisePikkus;
+            tekst.setX(praeguseX);
+            tekst.setY(praeguseY);
             juur.getChildren().add(tekst);
-            eelmisePikkus = testList.get(i).length()*12;
+            eelmisePikkus = praegusePikkus;
+            eelmiseKõrgus = font;
+            eelmiseX = praeguseX;
+            eelmiseY = praeguseY;
         }
     }
 
