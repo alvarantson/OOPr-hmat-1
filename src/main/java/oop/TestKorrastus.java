@@ -75,7 +75,7 @@ public class TestKorrastus extends Application {
                 maxFont = Math.min(120, (int) (500 / (sõna.length() * 0.75) * (sorted.get(sõna) / max)));
                 counter = 1;
             }
-            font = maxFont * (sorted.get(sõna) / max);
+            font = (int) (maxFont * ((double) sorted.get(sõna) / max));
             pikkus = (int) (sõna.length() * font * 0.75);
             uusX = (int) (Math.random() * (795 - pikkus) + 5);
             uusY = (int) (Math.random() * (780 - font * 2) + 20);
@@ -84,6 +84,7 @@ public class TestKorrastus extends Application {
             tekst.setY(uusY);
             tekst.toBack();
             juur.getChildren().add(tekst);
+            System.out.println(sõna);
         }
     }
 
