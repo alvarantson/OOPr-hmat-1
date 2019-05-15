@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="26e7d27a-2697-4d6b-bbb3-8a46f32a2d5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -27,6 +28,14 @@
       <change beforePath="$PROJECT_DIR$/src/TestKorrastus.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Õhtulehelised.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Õhtuleht.java" beforeDir="false" />
+=======
+    <list default="true" id="1fbff9dc-24ff-45a2-9af6-e3b9f7f8e25c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOPrühmatöö1/Fetcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOPrühmatöö1/TestFetcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KorrastajaLoendur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KorrastajaLoendur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestKorrastus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestKorrastus.java" afterDir="false" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,6 +80,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/oop/TestKorrastus.java">
@@ -86,15 +96,37 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KorrastajaLoendur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/oop/MustRuut.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TestKorrastus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
             </state>
           </provider>
         </entry>
@@ -107,6 +139,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/oop/MustRuut.java" />
         <option value="$PROJECT_DIR$/src/main/java/oop/AnneJaStiil.java" />
         <option value="$PROJECT_DIR$/src/main/java/oop/Artikkel.java" />
@@ -135,18 +168,53 @@
     <option name="y" value="34" />
     <option name="width" value="1402" />
     <option name="height" value="828" />
+=======
+        <option value="$PROJECT_DIR$/src/EkiSearch.java" />
+        <option value="$PROJECT_DIR$/src/Sorter.java" />
+        <option value="$PROJECT_DIR$/src/Eki.java" />
+        <option value="$PROJECT_DIR$/src/Korrastaja.java" />
+        <option value="$PROJECT_DIR$/src/Artikkel.java" />
+        <option value="$PROJECT_DIR$/src/Õhtuleht.java" />
+        <option value="$PROJECT_DIR$/src/Elu24.java" />
+        <option value="$PROJECT_DIR$/src/Postimees.java" />
+        <option value="$PROJECT_DIR$/src/TestFetcher.java" />
+        <option value="$PROJECT_DIR$/src/Ajaleht.java" />
+        <option value="$PROJECT_DIR$/src/Õhtulehelised.java" />
+        <option value="$PROJECT_DIR$/src/Postimehelised.java" />
+        <option value="$PROJECT_DIR$/src/Telegram.java" />
+        <option value="$PROJECT_DIR$/src/Delfilised.java" />
+        <option value="$PROJECT_DIR$/src/Telegramilised.java" />
+        <option value="$PROJECT_DIR$/src/Delfi.java" />
+        <option value="$PROJECT_DIR$/src/Kroonika.java" />
+        <option value="$PROJECT_DIR$/src/AnneJaStiil.java" />
+        <option value="$PROJECT_DIR$/src/Fetcher.java" />
+        <option value="$PROJECT_DIR$/src/KorrastajaLoendur.java" />
+        <option value="$PROJECT_DIR$/src/TestKorrastus.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="404" />
+    <option name="y" value="264" />
+    <option name="width" value="1800" />
+    <option name="height" value="1378" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="OOPr-hmat-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="OOPr-hmat-1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
@@ -164,6 +232,19 @@
             <path>
               <item name="OOPr-hmat-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="OOPr-hmat-1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+=======
+              <item name="PROJEKT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RÜHMATÖÖ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PROJEKT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RÜHMATÖÖ" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PROJEKT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RÜHMATÖÖ" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -180,12 +261,18 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addons/jsoup-1.11.3.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -193,6 +280,14 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557936793813" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -364,14 +459,22 @@
     <option name="totallyTimeSpent" value="11650000" />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
+=======
+    <frame x="404" y="264" width="1800" height="1378" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -385,6 +488,20 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.43804035" />
       <window_info anchor="bottom" id="Messages" order="13" />
+=======
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6924307" weight="0.40160644" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.3075693" side_tool="true" visible="true" weight="0.40195015" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" visible="true" weight="0.32771084" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -441,6 +558,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/oop/Kroonika.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -449,12 +567,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oop/Postimees.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/Sorter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Õhtuleht.java">
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/oop/Postimehelised.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -463,12 +586,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oop/Ajaleht.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/Elu24.java">
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/oop/Telegram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -482,6 +609,26 @@
           <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Telegram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#74#75#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnneJaStiil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#57#58#0" expanded="true" />
+            <element signature="e#111#112#0" expanded="true" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
           </folding>
         </state>
       </provider>
@@ -524,6 +671,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/oop/TestKorrastus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -542,6 +690,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Fetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eki.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ajaleht.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Artikkel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KorrastajaLoendur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestKorrastus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
         </state>
       </provider>
     </entry>
@@ -574,6 +779,10 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+<<<<<<< HEAD
+=======
+          <last-edited>javafx11</last-edited>
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -597,11 +806,19 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>mustruut-gradle_-_Copy</last-edited>
+=======
+          <last-edited>OOPrühmatöö1</last-edited>
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+<<<<<<< HEAD
+=======
+                <option value="0.6" />
+>>>>>>> 6a7ebcc88d024c69d8cc17d4d1ac0f1b98c33a7b
               </list>
             </option>
           </splitter-proportions>
