@@ -6,8 +6,9 @@ import org.jsoup.select.Elements;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+/*
 public class Fetcher {
     private String pealkiri;
     private String link;
@@ -63,6 +64,7 @@ public class Fetcher {
     }
 
     private static ArrayList<Fetcher> getPostimeesAbi(String url, String portaal) throws IOException {
+
         org.jsoup.nodes.Document document = Jsoup.connect(url).get();
         ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
 
@@ -94,8 +96,6 @@ public class Fetcher {
         return tagastus;
     }
 
-    //TODO: OHTULEHT SEE ON AIDS
-    //TODO: ARTIKLI TEKSTI OSA ON HUINJA
     public static ArrayList<Fetcher> getOhtuleht() throws IOException {
         String url = "https://www.ohtuleht.ee/";
         org.jsoup.nodes.Document document = Jsoup.connect(url).get();
@@ -113,11 +113,8 @@ public class Fetcher {
                 link = item.select("a").attr("href");
                 if (link.contains("http")) {
                     continue;
-                    // Tegemist ei ole Ohtulehe artikliga!
                 } else {
                     link = "https://www.ohtuleht.ee" + link;
-                }
-                // prindid alles siin kuna siis prindib ainult ohtulehe artiklid
                 Document artikkel = Jsoup.connect(link).get();
 
                 try {
@@ -126,9 +123,7 @@ public class Fetcher {
                     aeg = "-";
                 }
                 artikliSisu = "";
-                // boldis pildialune loik
                 artikliSisu = artikliSisu + artikkel.select(".article-main--gallery-title").select(".article-main--content").first().text() + "\n";
-                // reaalne sisu
                 for (Element tekst : artikkel.select(".page-layout--inner").select("p")) {
                     artikliSisu = artikliSisu + tekst.text() + "\n";
                 }
@@ -139,17 +134,14 @@ public class Fetcher {
         }
         return tagastus;
     }
-
     public static ArrayList<Fetcher> getTelegram() throws IOException {
         String url = "https://www.telegram.ee/";
         org.jsoup.nodes.Document document = Jsoup.connect(url).get();
-
         ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
         String pealkiri;
         String link;
         String aeg;
         String artikliSisu;
-
         Elements text = document.select(".grid-item");
         for (Element item : text) {
             pealkiri = item.text();
@@ -168,8 +160,6 @@ public class Fetcher {
         }
         return tagastus;
     }
-
-
     public static ArrayList<Fetcher> getDelfi() throws IOException {
         return getDelfiAbi("http://www.delfi.ee/", "Delfi");
     }
@@ -187,12 +177,10 @@ public class Fetcher {
     private static ArrayList<Fetcher> getDelfiAbi(String url, String portaal) throws IOException {
         org.jsoup.nodes.Document document = Jsoup.connect(url).get();
         ArrayList<Fetcher> tagastus = new ArrayList<Fetcher>();
-
         String pealkiri;
         String link;
         String aeg;
         String artikliSisu;
-
         Elements text = document.select(".headline__title");
         for (org.jsoup.nodes.Element item : text) {
             pealkiri = item.text();
@@ -209,4 +197,6 @@ public class Fetcher {
         }
         return tagastus;
     }
-}
+
+
+*/
