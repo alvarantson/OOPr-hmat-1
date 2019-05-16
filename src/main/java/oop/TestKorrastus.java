@@ -92,9 +92,19 @@ public class TestKorrastus extends Application {
             }
             font = (int) Math.sqrt(maxFont * 60 * ((double) sorted.get(sõna) / maxValue));
             pikkus = Math.min(795, (int) (sõna.length() * font * 0.9));
-            int red = (int) (Math.random()*255);
-            int green = (int) (Math.random()*255);
-            int blue = (int) (Math.random()*255);
+            int tugevus;
+            if (sorted.get(sõna) < 3) {
+                tugevus = 100;
+            } else if (sorted.get(sõna) < 10) {
+                tugevus = 140;
+            } else if (sorted.get(sõna) < 50) {
+                tugevus = 200;
+            } else {
+                tugevus = 255;
+            }
+            int red = (int) (Math.random()*tugevus);
+            int green = (int) (Math.random()*tugevus);
+            int blue = (int) (Math.random()*tugevus);
             tekst.setFill(Color.rgb(red, green, blue));
             if (pikkus == 795) uusX = 5;
             else uusX = (int) (Math.random() * (795 - pikkus) + (font/4));
