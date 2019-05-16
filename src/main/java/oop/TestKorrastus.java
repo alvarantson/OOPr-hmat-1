@@ -47,8 +47,12 @@ public class TestKorrastus extends Application {
     }
 
     @Override
+<<<<<<< HEAD
     public void start(Stage pealava) throws IOException {
 /*
+=======
+    public void start(Stage pealava) throws Exception {
+>>>>>>> origin/master
         KorrastajaLoendur korda = new KorrastajaLoendur();
         List<Ajaleht> ajalehed = Arrays.asList(new Postimees(), new Õhtuleht(), new Elu24(), new Telegram(),
                 new Delfi(), new AnneJaStiil(), new Kroonika());
@@ -62,6 +66,11 @@ public class TestKorrastus extends Application {
                         toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
                                 LinkedHashMap::new));
 
+<<<<<<< HEAD
+=======
+        //System.out.println(sorted);
+        /*
+>>>>>>> origin/master
         String[] testList = {"sõna1", "sõna2", "sõna3", "ai", "looool", "qwerty", "õppeinfosüsteem",
                 "veel", "muud", "paska", "räigelt", "jamamist", "katsetamiseks"};
         int[] testlist2 = {2, 11, 10, 8, 6, 5, 10, 7, 1, 1, 3, 6, 4};
@@ -70,6 +79,7 @@ public class TestKorrastus extends Application {
             testmap.put(testList[i], testlist2[i]);
         }
         Map<String, Integer> sorted = testmap.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).collect(toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2, LinkedHashMap::new));
+<<<<<<< HEAD
 */
         Stage küsimused = new Stage();
         küsimused.setTitle("WordClout");
@@ -92,6 +102,50 @@ public class TestKorrastus extends Application {
             CheckBox check = new AjaleheCheck(kõikAjalehed.get(i).getNimi(), kõikAjalehed.get(i));
             gp1b.add(check, i % 4, i / 4);
             GridPane.setMargin(check, new Insets(5));
+=======
+        //*/
+        Group juur = new Group();
+        System.out.println(sorted);
+        Scene stseen = new Scene(juur);
+        stseen.setFill(Color.BLACK);
+        pealava.setScene(stseen);
+        pealava.setHeight(800);
+        pealava.setWidth(800);
+        pealava.setTitle("Test");
+        pealava.show();
+        int uusX, uusY, pikkus, font, maxFont = 10, maxValue = 0, counter = 0;
+        for (String sõna : sorted.keySet()) {
+            Text tekst = new Text(sõna);
+            if (counter == 0) {
+                maxValue = sorted.get(sõna);
+                maxFont = Math.min(120, (int) (500 / (sõna.length() * 0.9) * (sorted.get(sõna) / maxValue)));
+                counter = 1;
+            }
+            font = (int) Math.sqrt(maxFont * 60 * ((double) sorted.get(sõna) / maxValue));
+            pikkus = Math.min(795, (int) (sõna.length() * font * 0.9));
+            int tugevus;
+            if (sorted.get(sõna) < 3) {
+                tugevus = 80;
+            } else if (sorted.get(sõna) < 7) {
+                tugevus = 140;
+            } else if (sorted.get(sõna) < 10) {
+                tugevus = 200;
+            } else {
+                tugevus = 255;
+            }
+            int red = (int) (Math.random()*tugevus);
+            int green = (int) (Math.random()*tugevus);
+            int blue = (int) (Math.random()*tugevus);
+            tekst.setFill(Color.rgb(red, green, blue));
+            if (pikkus == 795) uusX = 5;
+            else uusX = (int) (Math.random() * (795 - pikkus) + (font/4));
+            uusY = (int) (Math.random() * (780 - font * 2) + font);
+            tekst.setFont(new Font(font));
+            tekst.setX(uusX);
+            tekst.setY(uusY);
+            tekst.toBack();
+            juur.getChildren().add(tekst);
+>>>>>>> origin/master
         }
         gp1.add(gp1b, 0, 1, 1, 1);
         GridPane.setMargin(gp1b, new Insets(10));

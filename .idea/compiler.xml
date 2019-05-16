@@ -8,6 +8,8 @@
       <module name="mustruut-gradle_-_Copy.test" target="11" />
       <module name="OOPr-hmat-1.main" target="11" />
       <module name="OOPr-hmat-1.test" target="11" />
+      <module name="RÜHMATÖÖ.main" target="11" />
+      <module name="RÜHMATÖÖ.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
