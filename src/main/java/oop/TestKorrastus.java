@@ -1,23 +1,6 @@
 package oop;
 
-<<<<<<< HEAD
 
-import javafx.animation.PathTransition;
-import javafx.event.EventHandler;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.Slider;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.shape.*;
-import javafx.util.Duration;
-import javafx.application.Application;
-import javafx.scene.Group;
-import javafx.scene.Scene;
-=======
 import javafx.application.Application;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
@@ -27,17 +10,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.*;
->>>>>>> 385522c7150aa4bf27b61a5e3db56b37a4f1af80
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-<<<<<<< HEAD
-=======
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
->>>>>>> 385522c7150aa4bf27b61a5e3db56b37a4f1af80
 
 import java.io.IOException;
 import java.util.*;
@@ -45,53 +23,32 @@ import java.util.*;
 import static java.util.stream.Collectors.toMap;
 
 public class TestKorrastus extends Application {
-
-<<<<<<< HEAD
-    public static void main(String[] args) throws IOException {
-        /*
-        KorrastajaLoendur korda = new KorrastajaLoendur();
-        List<Ajaleht> ajalehed = Arrays.asList(new Postimees(), new Õhtuleht(), new Elu24(), new Telegram(),
-                new Delfi(), new AnneJaStiil(), new Kroonika());
-        korda.loeSisse(ajalehed);
-        System.out.println("Tulemusi kokku: "+  korda.getGlobalList().size());
-        Map<String, Integer> sorted = korda.getGlobalList()
-                .entrySet()
-                .stream()
-                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
-                .collect(
-                        toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
-                                LinkedHashMap::new));
-
-        //System.out.println(sorted);
-        //*/
-=======
     public static void main(String[] args) {
->>>>>>> 385522c7150aa4bf27b61a5e3db56b37a4f1af80
         launch(args);
     }
 
     @Override
-    public void start(Stage pealava) throws IOException {
+    public void start(Stage pealava) {
 
-        Stage küsimused = new Stage();
-        küsimused.setTitle("WordClout");
-        küsimused.setResizable(false);
+        Stage kusimused = new Stage();
+        kusimused.setTitle("WordClout");
+        kusimused.setResizable(false);
         GridPane gp1 = new GridPane();
-        Text küsimus1 = new Text("Vali ajalehed:");
-        küsimus1.setFont(new Font(14));
-        gp1.add(küsimus1, 0, 0, 2, 1);
+        Text kusimus1 = new Text("Vali ajalehed:");
+        kusimus1.setFont(new Font(14));
+        gp1.add(kusimus1, 0, 0, 2, 1);
         Button next = new Button("Next");
         gp1.add(next, 5, 2);
         GridPane.setHalignment(next, HPos.RIGHT);
         GridPane.setMargin(next, new Insets(10));
-        GridPane.setMargin(küsimus1, new Insets(10));
+        GridPane.setMargin(kusimus1, new Insets(10));
 
         GridPane gp1b = new GridPane();
         GridPane.setHalignment(gp1b, HPos.RIGHT);
-        List<Ajaleht> kõikAjalehed = Arrays.asList(new Postimees(), new Õhtuleht(), new Elu24(), new Telegram(),
+        List<Ajaleht> koikAjalehed = Arrays.asList(new Postimees(), new Õhtuleht(), new Elu24(), new Telegram(),
                 new Delfi(), new AnneJaStiil(), new Kroonika());
-        for (int i = 0; i < kõikAjalehed.size(); i++) {
-            CheckBox check = new AjaleheCheck(kõikAjalehed.get(i).getNimi(), kõikAjalehed.get(i));
+        for (int i = 0; i < koikAjalehed.size(); i++) {
+            CheckBox check = new AjaleheCheck(koikAjalehed.get(i).getNimi(), koikAjalehed.get(i));
             gp1b.add(check, i % 4, i / 4);
             GridPane.setMargin(check, new Insets(5));
         }
@@ -99,16 +56,16 @@ public class TestKorrastus extends Application {
         GridPane.setMargin(gp1b, new Insets(10));
 
         Scene stseen1 = new Scene(gp1);
-        küsimused.setScene(stseen1);
-        küsimused.show();
+        kusimused.setScene(stseen1);
+        kusimused.show();
 
         GridPane gp2 = new GridPane();
         TextField vastus1 = new TextField();
-        Text küsimus2 = new Text("Sisesta keelatud sõnad (tühikutega eraldatuna):");
-        küsimus2.setFont(new Font(14));
+        Text kusimus2 = new Text("Sisesta keelatud sõnad (tühikutega eraldatuna):");
+        kusimus2.setFont(new Font(14));
         Button valmis = new Button("Valmis");
-        gp2.add(küsimus2, 0, 0, 3, 1);
-        GridPane.setMargin(küsimus2, new Insets(10));
+        gp2.add(kusimus2, 0, 0, 3, 1);
+        GridPane.setMargin(kusimus2, new Insets(10));
         gp2.add(vastus1, 0, 1, 3, 1);
         GridPane.setMargin(vastus1, new Insets(10));
         gp2.add(valmis, 2, 3);
@@ -124,7 +81,7 @@ public class TestKorrastus extends Application {
                     valitud.add(((AjaleheCheck) checkbox).getAjaleht());
                 }
             }
-            küsimused.setScene(stseen1b);
+            kusimused.setScene(stseen1b);
         });
 
         Text teade = new Text("Kaabin, läheb aega...");
@@ -135,7 +92,7 @@ public class TestKorrastus extends Application {
 
         valmis.setOnMouseClicked(event -> {
             String keelatudString = vastus1.getText();
-            küsimused.setScene(teadeStseen);
+            kusimused.setScene(teadeStseen);
             KorrastajaLoendur korda = new KorrastajaLoendur();
             try {
                 korda.loeSisse(valitud, Arrays.asList(keelatudString.split(" ")));
@@ -157,21 +114,21 @@ public class TestKorrastus extends Application {
             pealava.setWidth(800);
             pealava.setTitle("WordClout");
             int uusX, uusY, pikkus, font, maxFont = 10, maxValue = 0, counter = 0;
-            for (String sõna : sorted.keySet()) {
-                Text tekst = new Text(sõna);
+            for (String sona : sorted.keySet()) {
+                Text tekst = new Text(sona);
                 if (counter == 0) {
-                    maxValue = sorted.get(sõna);
-                    maxFont = Math.min(120, (int) (500 / (sõna.length() * 0.9) * (sorted.get(sõna) / maxValue)));
+                    maxValue = sorted.get(sona);
+                    maxFont = Math.min(120, (int) (500 / (sona.length() * 0.9) * (sorted.get(sona) / maxValue)));
                     counter = 1;
                 }
-                font = (int) Math.sqrt(maxFont * 60 * ((double) sorted.get(sõna) / maxValue));
-                pikkus = Math.min(795, (int) (sõna.length() * font * 0.9));
+                font = (int) Math.sqrt(maxFont * 60 * ((double) sorted.get(sona) / maxValue));
+                pikkus = Math.min(795, (int) (sona.length() * font * 0.9));
                 int tugevus;
-                if (sorted.get(sõna) < 3) {
+                if (sorted.get(sona) < 3) {
                     tugevus = 80;
-                } else if (sorted.get(sõna) < 7) {
+                } else if (sorted.get(sona) < 7) {
                     tugevus = 170;
-                } else if (sorted.get(sõna) < 10) {
+                } else if (sorted.get(sona) < 10) {
                     tugevus = 200;
                 } else {
                     tugevus = 255;
@@ -188,28 +145,22 @@ public class TestKorrastus extends Application {
                 tekst.setY(uusY);
                 juur.getChildren().add(tekst);
             }
-            küsimused.close();
+            kusimused.close();
             pealava.setScene(stseen2);
             pealava.show();
 
-            pealava.widthProperty().addListener(new ChangeListener<Number>() {
-                @Override
-                public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                    for (Node node : juur.getChildren()) {
-                        if (node instanceof Text) {
-                            ((Text) node).setX(((Text) node).getX() * (newValue.doubleValue() / oldValue.doubleValue()));
-                        }
+            pealava.widthProperty().addListener((observable, oldValue, newValue) -> {
+                for (Node node : juur.getChildren()) {
+                    if (node instanceof Text) {
+                        ((Text) node).setX(((Text) node).getX() * (newValue.doubleValue() / oldValue.doubleValue()));
                     }
                 }
             });
 
-            pealava.heightProperty().addListener(new ChangeListener<Number>() {
-                @Override
-                public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                    for (Node node : juur.getChildren()) {
-                        if (node instanceof Text) {
-                            ((Text) node).setY(((Text) node).getY() * (newValue.doubleValue() / oldValue.doubleValue()));
-                        }
+            pealava.heightProperty().addListener((observable, oldValue, newValue) -> {
+                for (Node node : juur.getChildren()) {
+                    if (node instanceof Text) {
+                        ((Text) node).setY(((Text) node).getY() * (newValue.doubleValue() / oldValue.doubleValue()));
                     }
                 }
             });
