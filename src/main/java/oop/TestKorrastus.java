@@ -94,10 +94,10 @@ public class TestKorrastus extends Application {
             pikkus = Math.min(795, (int) (sõna.length() * font * 0.9));
             int tugevus;
             if (sorted.get(sõna) < 3) {
-                tugevus = 100;
-            } else if (sorted.get(sõna) < 10) {
+                tugevus = 80;
+            } else if (sorted.get(sõna) < 7) {
                 tugevus = 140;
-            } else if (sorted.get(sõna) < 50) {
+            } else if (sorted.get(sõna) < 10) {
                 tugevus = 200;
             } else {
                 tugevus = 255;
