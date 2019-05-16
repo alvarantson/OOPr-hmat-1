@@ -1,33 +1,30 @@
 package oop;
 
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
-import javafx.geometry.Orientation;
-import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 
 import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.Flow;
 
 import static java.util.stream.Collectors.toMap;
 
 public class TestKorrastus extends Application {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         launch(args);
     }
 
@@ -152,6 +149,30 @@ public class TestKorrastus extends Application {
             küsimused.close();
             pealava.setScene(stseen2);
             pealava.show();
+
+            pealava.widthProperty().addListener(new ChangeListener<Number>() {
+                @Override
+                public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                    for (Node node : juur.getChildren()) {
+                        if (node instanceof Text) {
+                            ((Text) node).setX(((Text) node).getX() * (newValue.doubleValue() / oldValue.doubleValue()));
+                        }
+                    }
+                }
+            });
+
+            pealava.heightProperty().addListener(new ChangeListener<Number>() {
+                @Override
+                public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                    for (Node node : juur.getChildren()) {
+                        if (node instanceof Text) {
+                            ((Text) node).setY(((Text) node).getY() * (newValue.doubleValue() / oldValue.doubleValue()));
+                        }
+                    }
+                }
+            });
+
+
         });
     }
 
